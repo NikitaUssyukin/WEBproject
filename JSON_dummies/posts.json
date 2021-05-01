@@ -1,0 +1,19 @@
+{ "posts": 
+    [
+        {
+            "username": "Nikita",
+            "title": "How to make your web project in 2 days?",
+            "text": "I don't know. Don't ask me how & why."
+        },
+        {
+            "username": "Linara",
+            "title": "How to make a design for web project?",
+            "text": "The answer is simple, use CSS."
+        },
+        {
+            "username": "Abylai",
+            "title": "Need JSON file for posts!",
+            "text": "Somebody, make a JSON file for posts, thanks."
+        }
+    ]
+}

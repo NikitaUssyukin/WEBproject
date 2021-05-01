@@ -1,0 +1,24 @@
+{
+    "user": {
+        "email": "user2@user.user",
+        "username": "user2",
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZXhwIjoxNjE5OTQ2NTczfQ.n1cSHlZF88-pUm4p-mS4YyHyxHK2I_CQMjQttEeIOUM"
+    }
+}
+
+
+{
+    "user": {
+        "email": "user2@user.user",
+        "password": "qweasdzxc"
+    }
+}
+
+
+{
+    "user": {
+        "email": "user1@user.user",
+        "username": "user1",
+        "password": "qweasdzxc"
+    }
+}
