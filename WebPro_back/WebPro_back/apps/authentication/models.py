@@ -65,6 +65,13 @@ class User(AbstractBaseUser, PermissionsMixin):
     def get_short_name(self):
         return self.username
 
+    def to_json(self):
+        return {
+          'id': self.id,
+          'username': self.username,
+          'email': self.email,
+        }
+
     def _generate_jwt_token(self):
         dt = datetime.now() + timedelta(days=1)
 

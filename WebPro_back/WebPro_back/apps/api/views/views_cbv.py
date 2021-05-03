@@ -4,7 +4,7 @@ from rest_framework.views import APIView
 from rest_framework import status
 
 from api.serializers import CommentsSerializer, UserSerializer
-from api.models import Comment, UserInfo
+from api.models import Comment
 
 
 class CommentsListAPIView(APIView):

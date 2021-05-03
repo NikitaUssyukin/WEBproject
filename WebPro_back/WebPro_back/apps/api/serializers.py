@@ -1,10 +1,11 @@
 from rest_framework import serializers
-from api.models import UserInfo, Comment, Post
+from api.models import Comment, Post
+from authentication.models import User
 
 
 class UserSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
-    user_name = serializers.CharField(read_only=True)
+    username = serializers.CharField(read_only=True)
     description = serializers.CharField(read_only=True)
 
 
