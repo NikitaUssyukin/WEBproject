@@ -13,7 +13,7 @@ class Post(models.Model):
     title = models.CharField(max_length=300)
     body = models.TextField(default='')
     #change UserInfo to User
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts', null=True, blank=True)
 
     def to_json(self):
         return {
@@ -29,8 +29,8 @@ class Comment(models.Model):
     name = models.CharField(max_length=300)
     comment_body = models.TextField(default='')
     comment_title = models.CharField(max_length=300)
-    post_id = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comment_author')
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments', blank=True, null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comment_author', blank=True, null=True)
 
     def to_json(self):
         return {
